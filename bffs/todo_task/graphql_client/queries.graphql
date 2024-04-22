@@ -1,0 +1,42 @@
+mutation addTodoTask($todo_task: TodoTask!) {
+    add_todo_task(todo_task:$todo_task) {
+        id
+        task
+    }
+}
+
+mutation updateTodoTask($todo_task: TodoTask!) {
+    update_todo_task(todo_task:$todo_task) {
+        id
+        task
+    }
+}
+
+query getTodoTaskList {
+    todo_task_list {
+        id
+        task
+    }
+}
+
+query getTodoTaskById($id: Int!) {
+    todo_task_by_id(id:$id) {
+        id
+        task
+    }
+}
+
+query getPerson($id: String!) {
+    person_by_digital_id(id:$id) {
+        id
+        full_name
+        asgardeo_id
+        jwt_sub_id
+        jwt_email
+        digital_id
+        email
+        created
+        updated
+    }
+}
+   

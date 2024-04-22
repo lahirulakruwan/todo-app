@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "apps-frontend",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "apps-frontend (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "apps-frontend (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter",
+            "request": "launch",
+            "type": "dart",
+            "args": ["-d", "chrome","--web-port", "64005"],
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "debug iphone",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "iPhone 14 Pro Max",
+            "flutterMode": "debug",
+            "runTestsOnDevice": false
+        },
+        {
+            "name": "debug android",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "deviceId": "emulator-5554",
+            "runTestsOnDevice": false
+        },
+    ]
+}

@@ -1,0 +1,35 @@
+type Mutation {
+  add_todo_task(todo_task: TodoTask!): TodoTaskData
+  update_todo_task(todo_task: TodoTask!): TodoTaskData
+  delete_todo_task(id: Int!): Int
+}
+
+type PersonData {
+  id: Int
+  full_name: String
+  created: String
+  updated: String
+  asgardeo_id: String
+  jwt_sub_id: String
+  jwt_email: String
+  digital_id: String
+  email: String
+}
+
+type Query {
+  person_by_digital_id(id: String): PersonData
+  todo_task_list: [TodoTaskData!]!
+  todo_task_by_id(id: Int!): TodoTaskData
+}
+
+input TodoTask {
+  record_type: String = ""
+  id: Int
+  task: String
+}
+
+type TodoTaskData {
+  id: Int
+  task: String
+}
+
