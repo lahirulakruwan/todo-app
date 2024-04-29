@@ -65,7 +65,7 @@ class Person {
 //-------- start of profile functions ---------------
 
 Future<Person> fetchPerson(String digital_id) async {
-  final uri = Uri.parse('http://localhost:9095/person')
+  final uri = Uri.parse(AppConfig.todoTaskBffApiUrl + '/person')
       .replace(queryParameters: {'digital_id': digital_id});
 
   final response = await http.get(
@@ -73,7 +73,7 @@ Future<Person> fetchPerson(String digital_id) async {
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
       'accept': 'application/json',
-      'Authorization': 'Bearer ' + AppConfig.campusBffApiKey,
+      'Authorization': 'Bearer ' + AppConfig.todoTaskBffApiKey,
     },
   );
 

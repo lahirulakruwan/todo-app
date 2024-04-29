@@ -84,7 +84,7 @@ class AppPortalAuth extends ChangeNotifier {
           if (response.statusCode == 200) {
             var refreshedTokens = json.decode(response.body);
             AppConfig.apiTokens = refreshedTokens;
-            AppConfig.campusBffApiKey = refreshedTokens["access_token"];
+            AppConfig.todoTaskBffApiKey = refreshedTokens["access_token"];
             AppConfig.refreshToken = refreshedTokens["refresh_token"];
             print('Access token refreshed successfully');
           } else {
@@ -122,7 +122,7 @@ class AppPortalAuth extends ChangeNotifier {
             _api_tokens
               ..forEach((key, value) =>
                   print("API tokens Key : $key, Value : $value"));
-            AppConfig.campusBffApiKey = _api_tokens["access_token"];
+            AppConfig.todoTaskBffApiKey = _api_tokens["access_token"];
             AppConfig.refreshToken = _api_tokens["refresh_token"];
             print('Fetch API tokens success');
           } else {

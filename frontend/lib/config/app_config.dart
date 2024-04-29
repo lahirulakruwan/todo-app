@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class AppConfig {
   static String apiUrl = '';
-  static String campusProfileBffApiUrl = '';
+  static String todoTaskBffApiUrl = '';
   static String refreshToken = '';
   static String choreoSTSEndpoint = "";
   static String choreoSTSClientID = "x23_1tY7kAUtLUH9il9I3YwyrJca";
@@ -16,7 +16,7 @@ class AppConfig {
   static String applicationVersion = '1.0.0';
   static String asgardeoLogoutUrl = '';
   static var apiTokens = null;
-  static String campusBffApiKey = '';
+  static String todoTaskBffApiKey = '';
 
   //AppConfig({required this.apiUrl});
 
@@ -33,7 +33,7 @@ class AppConfig {
 
     // decode our json
     final json = jsonDecode(contents);
-    campusProfileBffApiUrl = json['campusProfileBffApiUrl'];
+    todoTaskBffApiUrl = json['todoTaskBffApiUrl'];
     choreoSTSEndpoint = json['choreo_sts_endpoint'];
     asgardeoTokenEndpoint = json['asgardeo_token_endpoint'];
     asgardeoLogoutUrl = json['logout_url'];
