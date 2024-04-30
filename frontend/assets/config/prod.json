@@ -1,8 +1,8 @@
 {
-    "campusProfileBffApiUrl" : "",
-    "choreo_sts_endpoint" : "",
-    "asgardeo_token_endpoint" : "",
-    "logout_url" : ""
+    "todoTaskBffApiUrl" : "https://468a066d-8e13-4c42-a031-ce039206f5a2-prod.e1-us-cdp-2.choreoapis.dev/todoapps/todoappbff/endpoint-9090-803/v1.0",
+    "choreo_sts_endpoint" : "https://api.asgardeo.io/t/lahiruenterprises/oauth2/token",
+    "asgardeo_token_endpoint" : "https://api.asgardeo.io/t/lahiruenterprises/oauth2/token",
+    "logout_url" : "https://api.asgardeo.io/t/lahiruenterprises/oidc/logout"
 }
 
 
