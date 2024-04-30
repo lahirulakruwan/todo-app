@@ -73,8 +73,6 @@ flutter:
   assets:
     - assets/config/dev.json
     - assets/config/prod.json
-    - assets/config/dev-cloud.json
-    - assets/config/stag.json
     - assets/images/
     - assets/icons/
 
