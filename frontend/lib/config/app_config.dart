@@ -7,10 +7,10 @@ class AppConfig {
   static String todoTaskBffApiUrl = '';
   static String refreshToken = '';
   static String choreoSTSEndpoint = "";
-  static String choreoSTSClientID = "x23_1tY7kAUtLUH9il9I3YwyrJca";
+  static String choreoSTSClientID = "iLPfTf0z1geDk03c9aLnZNycjMIa";
   // static String choreoSTSClientID = "Krjx9Wr0F5eKDYAJQOSVX5rz2aoa";
   static String asgardeoTokenEndpoint = "";
-  static String asgardeoClientId = "pJ2gM2o6yXN4f60FypEYWWERrAoa";
+  static String asgardeoClientId = "ln1sMIFXA7qBuWOKl5FHGohJ0Wwa";
   //static String asgardeoClientId = "6diD3fVU6KfYeokr3BZGoGPioCUa";
   static String applicationName = 'Todo App';
   static String applicationVersion = '1.0.0';

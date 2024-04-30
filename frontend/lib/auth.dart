@@ -41,8 +41,6 @@ class AppPortalAuth extends ChangeNotifier {
         appPortalInstance.setJWTEmail(decodedAccessToken["email"]);
         appPortalInstance.setDigitalId(decodedAccessToken["email"]);
         appPortalPersonMetaDataInstance
-            .setGroups(decodedAccessToken["groups"] as List<dynamic>);
-        appPortalPersonMetaDataInstance
             .setScopes(decodedAccessToken["scope"] as String);
 
         bool isTokenExpired = JwtDecoder.isExpired(_openid_tokens["id_token"]);
